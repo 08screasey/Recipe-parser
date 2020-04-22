@@ -1,0 +1,104 @@
+.redButton{
+color: hsla(15, 96%, 62%, 1)
+}
+.redButton:hover{
+	color:hsla(15, 96%, 52%, 1);
+}
+
+
+.toggler {
+	transition: 0.2s;
+}
+
+.toggler:hover {
+	transform: scale(1.1);
+}
+
+.toggler:click {
+	transform: scale(0.9)
+}
+
+.RecipePreview img{
+	max-height:300px;
+	width: 100%;
+	object-fit: cover;
+	margin: 0;
+	padding: 0;
+}
+.RecipePreviewList {
+	margin:0;
+	padding: 15px;
+}
+.RecipePreview .ServingsDiv{
+	border: 1px dashed black;
+	margin:  0;
+	padding:10px 0 5px 0 !important;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+	font-weight:300;
+	text-overflow: ellipsis;
+	overflow-wrap: break-word;
+	overflow: hidden;
+}
+
+.RecipePreview .ImageDiv {
+	padding: 0 !important;
+}
+
+.RecipePreview h4{
+	font-family: 'Cookie', cursive;
+	font-size: 40px;
+	margin-bottom: 0px;
+	color: hsl(122, 20%, 60%)
+}
+
+.RecipePreview h5 {
+font-family: 'Cookie', cursive;
+	font-size: 40px;
+		color: hsl(122, 20%, 60%)
+}
+
+
+.RecipePreview{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400
+}
+
+.RecipePreview a{
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	color:hsl(122, 50%, 10%);
+	letter-spacing: 1px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 80%;
+	padding-bottom: 15px
+}
+
+.RecipePreview a:hover{
+	
+	color:hsl(122, 20%, 60%);
+}
+.RecipePreview ul{
+	list-style: none
+}
+.RecipePreview ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: hsl(122, 20%, 60%); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+@media(max-width:800px){
+	.RecipePreview img{
+	height:100%;
+	width: 90%;
+	display: block;
+	object-fit: contain;
+	margin: 0 auto;
+	padding: 0;
+}
+}

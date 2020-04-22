@@ -1,0 +1,71 @@
+.Ingredients input{
+	font-size: 12px !important
+}
+.Ingredients {
+	font-size: 12px
+}
+
+.Instructions {
+font-size: 12px !important }
+
+.Instructions input {
+	font-size: 12px !important;
+}
+
+.InstructionRemover {
+	font-size: 20px;
+	color:red;
+}
+.InstructionRemover:hover {
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.4) 
+}
+
+.SelectedTag{
+	color:green;
+}
+
+.DefaultTag{
+	color:black;
+}
+
+.Tags li.SelectedTag {
+	list-style: none;
+	border:3px solid green;
+	margin: 10px 10px 0px 0px;
+	padding:5px 10px;
+	width:auto;
+	position: relative
+
+}
+
+.Tags li.DefaultTag{
+
+	list-style: none;
+	border:3px solid gray;
+	margin: 10px 10px 0px 0px;
+	padding:5px 10px;
+	width:auto;
+	position: relative;
+	background: rgba(0,0,0,0.3);
+}
+
+.Tags li:hover {
+	background-color: rgba(10,200,10,0.3)
+}
+
+
+.RemoveTagHandler {
+	position: absolute;
+	width:25px;
+	height:25px;
+	top:-15px;
+	left:-7px;
+	background: white;
+	border: 2px solid red;
+	border-radius: 50%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
