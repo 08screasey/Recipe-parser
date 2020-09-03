@@ -8,7 +8,7 @@ export const fetchCustomRecipe = (recipeURL) => {
 		dispatch(fetchCustomRecipeStart());
 		axios
 			.get(
-				`https://api.spoonacular.com/recipes/extract?url=${recipeURL}&apiKey=6ff3037d879049c4b88e75c67eed0bb1`
+				`https://api.spoonacular.com/recipes/extract?url=${recipeURL}&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`
 			)
 			.then((result) => {
 				const recipe = {

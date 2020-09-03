@@ -5,10 +5,10 @@ export const auth = (userData, isSignUp) => {
 	return (dispatch) => {
 		dispatch(authStart());
 		let defaultURL =
-			"https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAvTLUe3co--_8vVrY14r9yYfYR6uq5S_M";
+			`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${process.env.REACT_APP_FIREBASE_KEY}`;
 		if (!isSignUp) {
 			defaultURL =
-				"https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAvTLUe3co--_8vVrY14r9yYfYR6uq5S_M";
+				`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${process.env.REACT_APP_FIREBASE_KEY}`;
 		}
 		axios
 			.post(defaultURL, userData)

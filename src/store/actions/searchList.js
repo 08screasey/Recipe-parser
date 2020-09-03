@@ -6,7 +6,7 @@ export const fetchSearchRecipes = (params) => {
 		dispatch(fetchSearchRecipesStart());
 		axios
 			.get(
-				`https://api.spoonacular.com/recipes/search?query=${params}&number=20&diet=vegan&instructionsRequired=true&apiKey=6ff3037d879049c4b88e75c67eed0bb1`
+				`https://api.spoonacular.com/recipes/search?query=${params}&number=20&diet=vegan&instructionsRequired=true&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`
 			)
 			.then((result) => {
 				let recipes = [];
@@ -49,7 +49,7 @@ export const fetchMoreSearchRecipes = (params, offset) => {
 		dispatch(fetchMoreSearchRecipesStart());
 		axios
 			.get(
-				`https://api.spoonacular.com/recipes/search?query=${params}&offset=${offset}&number=20&diet=vegan&instructionsRequired=true&apiKey=6ff3037d879049c4b88e75c67eed0bb1`
+				`https://api.spoonacular.com/recipes/search?query=${params}&offset=${offset}&number=20&diet=vegan&instructionsRequired=true&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`
 			)
 			.then((result) => {
 				let recipes = [];
@@ -95,7 +95,7 @@ export const fetchSearchRecipe = (id, index) => {
 		dispatch(fetchSearchRecipeStart());
 		axios
 			.get(
-				`https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=6ff3037d879049c4b88e75c67eed0bb1`
+				`https://api.spoonacular.com/recipes/${id}/information?includeNutrition=false&apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}`
 			)
 			.then((result) => {
 				let recipe = {
