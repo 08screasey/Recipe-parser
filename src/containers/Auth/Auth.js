@@ -151,6 +151,7 @@ class Auth extends Component {
 							style={{
 								color: "rgba(40,90,200,0.7)",
 								textDecoration: "underline",
+								cursor:"pointer"
 							}}
 							onClick={this.handleSwitchMode}
 						>
