@@ -39,7 +39,7 @@ class Info extends React.Component {
 						</p>
 						<img
 							src={homepage}
-							className="w-75"
+							className="w-100"
 							alt="Example of home page"
 						/>
 						<p>
@@ -82,7 +82,7 @@ class Info extends React.Component {
 						</p>
 						<img
 							src={add}
-							className="w-75"
+							className="w-100"
 							alt="a preview of the add url button"
 						/>
 						<p>
@@ -105,7 +105,7 @@ class Info extends React.Component {
 							correct recipe for you.
 						</p>
 						<img
-							className="w-75"
+							className="w-100"
 							src={servings}
 							alt="Example of serving buttons"
 						/>
@@ -116,7 +116,7 @@ class Info extends React.Component {
 						</p>
 						<img
 							src={buttons}
-							className="w-75"
+							className="w-100"
 							alt="An screenshot of the buttons"
 						/>
 						<p>
@@ -142,7 +142,7 @@ class Info extends React.Component {
 							segment.
 						</p>
 						<img
-							className="w-75"
+							className="w-100"
 							src={editRecipe}
 							alt="Example of serving buttons"
 						/>
@@ -152,7 +152,7 @@ class Info extends React.Component {
 							associated with.
 						</p>
 						<img
-							className="w-75"
+							className="w-100"
 							src={addNotes}
 							alt="screenshot of notes section"
 						/>
@@ -175,7 +175,7 @@ class Info extends React.Component {
 						</p>
 						<img
 							src={filtered}
-							className="w-75"
+							className="w-100"
 							alt="screenshot of example filter"
 						/>
 						<p>
@@ -211,7 +211,7 @@ class Info extends React.Component {
 						</p>
 						<img
 							src={search}
-							className="w-75"
+							className="w-100"
 							alt="screenshot of search page"
 						/>
 						<p>
