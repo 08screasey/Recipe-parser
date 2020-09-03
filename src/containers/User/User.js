@@ -26,6 +26,7 @@ class User extends Component {
 	componentDidMount() {
 		this.props.onFetchUserRecipes(this.props.idToken, this.props.userId);
 		this.props.onFetchUserData(this.props.idToken, this.props.userId);
+		this.setState({newUser:this.props.newUser})
 	}
 	componentDidUpdate() {
 		console.log(this.props.recipes);
@@ -189,7 +190,7 @@ class User extends Component {
 								<div className="d-flex align-items-center mx-auto mt-3 w-100 justify-content-center">
 									<div
 										className="col-auto"
-										style={{ height: "50px" }}
+										style={{ height: "auto" }}
 									>
 										<div className="input-group ">
 											<div
@@ -218,11 +219,11 @@ class User extends Component {
 									</div>
 									<div>
 									<i
-										className="fas fa-question-circle toggler 2x"
-										style={{color:"blue"}}
+										className="fas fa-question-circle toggler"
+										style={{color:"hsl(184.8,64.1%,60%)", fontSize:"25px"}}
 										onClick={this.handleInfoToggle}></i>
 										<Modal closeModal={this.handleInfoToggle} showModal={this.state.newUser}>
-											<Info />
+											{this.state.newUser ? <Info /> : null}
 										</Modal>
 									</div>
 								</div>
@@ -238,7 +239,7 @@ class User extends Component {
 									message: this.props.fetchError.data,
 								}}
 							/>
-						) : this.props.recipes ? (
+						) : this.props.recipes && this.props.recipes.length>0 ? (
 							<RecipeList
 								clicked={(id) => this.handleSelectedRecipe(id)}
 								recipes={
@@ -247,7 +248,7 @@ class User extends Component {
 										: this.props.recipes
 								}
 							/>
-						) : null}
+						) : <p className="NoRecipes">No Saved Recipes</p>}
 					</div>
 				</div>
 				<Modal
@@ -291,6 +292,7 @@ const mapStateToProps = (state) => {
 		dataLoading: state.user.dataLoading,
 		fetchError: state.user.fetchError,
 		dataError: state.user.dataError,
+		newUser:state.auth.newUser
 	};
 };
 

@@ -5,18 +5,13 @@ const initialState = {
 	userId: null,
 	error: null,
 	loading: false,
+	newUser:false
 };
 
 const reducer = (state = initialState, action) => {
 	switch (action.type) {
 		case actionTypes.LOGOUT:
-			return {
-				...state,
-				userId: null,
-				error: null,
-				idToken: null,
-				loading: false,
-			};
+			return initialState;
 		case actionTypes.AUTH_START:
 			return { ...state, loading: true, error: null };
 		case actionTypes.AUTH_SUCCESS:
@@ -29,6 +24,9 @@ const reducer = (state = initialState, action) => {
 			};
 		case actionTypes.AUTH_FAILED:
 			return { ...state, loading: false, error: action.error };
+		case actionTypes.NEW_USER:
+		console.log(state)
+			return {...state, newUser:true}
 		default:
 			return state;
 	}

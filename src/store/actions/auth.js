@@ -13,6 +13,9 @@ export const auth = (userData, isSignUp) => {
 		axios
 			.post(defaultURL, userData)
 			.then((result) => {
+				if(isSignUp){
+					dispatch(newUser())
+				}
 				const expDate = new Date(
 					new Date().getTime() + result.data.expiresIn * 1000
 				);
@@ -21,6 +24,7 @@ export const auth = (userData, isSignUp) => {
 				localStorage.setItem("expDate", expDate);
 				dispatch(authSuccess(result.data));
 				dispatch(startAuthTimeout(result.data.expiresIn));
+				
 			})
 			.catch((error) => {
 				dispatch(authFailed(error.response.data.error));
@@ -56,6 +60,10 @@ export const initAuthCheck = () => {
 export const authStart = () => {
 	return { type: actionTypes.AUTH_START };
 };
+
+const newUser = () => {
+	return {type:actionTypes.NEW_USER}
+}
 
 export const authSuccess = (userData) => {
 	return {

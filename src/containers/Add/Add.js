@@ -35,7 +35,7 @@ class Add extends Component {
 			<div className="Preview">
 				<RecipeDetails recipe={this.props.recipe} />
 			</div>
-		) : null;
+		) : <p className="NoRecipes">Paste a url in to the search bar</p>;
 
 		return (
 			<div className={this.props.recipe ? "Add Result" : "Add"}>
@@ -49,7 +49,8 @@ class Add extends Component {
 								<input
 									type="text"
 									onChange={(e) => this.handleInputChange(e)}
-									placeholder="Paste Your URL here"
+									placeholder="
+									Url Search"
 									value={this.state.addRecipeUrl}
 									className="mr-2 URL"
 								/>

@@ -26,3 +26,12 @@
 .User h2 {
 	font-size: 18px;
 }
+.NoRecipes{
+
+	font-size: 40px !important;
+	font-weight: bold;
+	color: #eee;
+	text-align: center;
+	padding-top:50px;
+
+}

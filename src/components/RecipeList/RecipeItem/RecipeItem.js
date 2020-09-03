@@ -5,22 +5,23 @@ import { Waypoint } from "react-waypoint";
 class RecipeItem extends React.Component {
 	state = { inVP: false };
 
-	changeClasses = () => {
+	changeClasses = (bool) => {
 		this.setState((prevState) => {
-			return { inVP: !prevState.inVP };
+			return { inVP: bool };
 		});
 	};
 
 	render() {
 		return (
-			<div className="RecipeItem" onClick={this.props.clicked}>
+			<div className="RecipeItem" onClick={this.props.clicked} style={{overflow: "hidden"}}>
 				<Waypoint
-					onEnter={this.changeClasses}
-					onLeave={this.changeClasses}
+					onEnter={()=>this.changeClasses(true)}
+					onLeave={()=>this.changeClasses(false)}
+					bottomOffset="-200px"
 				>
 					<div
 						className={"Viewport-BG"}
-						style={{ opacity: this.state.inVP ? "1" : "0" }}
+						style={{ transform: this.state.inVP ? "translateY(0)" : "translateY(200px)" }}
 					>
 						<p
 							className="m-auto text-center"

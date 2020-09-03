@@ -23,14 +23,19 @@
 
 .Viewport-BG {
 	transition: 1s;
-	height: 100%;
+	height: 30%;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.95);
+
 	z-index: 10;
 	box-sizing: border-box;
-	border: 1px solid black;
+	border-top: 2px solid black;
+	border-bottom:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid black;
+
 	width: 100%;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	display: flex;
 	align-items: center;
@@ -42,8 +47,8 @@
 	position: relative;
 	bottom: 20px;
 	color: black;
-	font-size: 55px;
-	font-weight: 300;
+	font-size: 20px;
+	font-weight: 500;
 	transition: 2s;
 	padding: 0px 10px;
 	max-height: 82%;

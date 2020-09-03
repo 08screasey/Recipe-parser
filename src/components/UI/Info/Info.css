@@ -1,1 +1,13 @@
-.Info p{font-size:18px;}
+.Info p{font-size:18px;
+}
+.Info{
+padding:3% 5% 50px 5%;}
+
+.Info img{
+	display: block;
+	margin: 30px auto;
+}
+
+.Info p:first-of-type{
+	margin-top: 30px
+}
