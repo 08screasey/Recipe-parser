@@ -1,4 +1,4 @@
-.Info p{font-size:18px;
+.Info p{font-size:14px;
 }
 .Info{
 padding:3% 5% 50px 5%;}
@@ -10,4 +10,10 @@ padding:3% 5% 50px 5%;}
 
 .Info p:first-of-type{
 	margin-top: 30px
+}
+.Info h1{font-size: 28px}
+
+@media (min-width: 1000px) {
+.Info h1{font-size: 50px}
+.Info p {font-size: 18px}
 }
