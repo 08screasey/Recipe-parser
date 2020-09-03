@@ -1,55 +1,56 @@
 .UserData {
 	border: 2px solid hsl(92, 54%, 32%);
-	font-family: 'Lato', sans-serif;
-	padding:10px;
-	width:95%;
+	font-family: "Lato", sans-serif;
+	padding: 10px;
+	width: 95%;
 	margin: auto;
 }
-.UserData p{ font-size: 20px }
-
-.btn.btn-addTag{
-background-color: hsl(112, 44%, 72%);
-border:none;
-font-size: 18px;
-width:60px;
-color:white;
-box-shadow: 2px 2px 4px hsl(92, 54%, 72%)
+.UserData p {
+	font-size: 20px;
 }
-.btn.btn-addTag:hover{
-	background-color: hsl(112, 44%, 82%)
+
+.btn.btn-addTag {
+	background-color: hsl(112, 44%, 72%);
+	border: none;
+	font-size: 18px;
+	width: 60px;
+	color: white;
+	box-shadow: 2px 2px 4px hsl(92, 54%, 72%);
+}
+.btn.btn-addTag:hover {
+	background-color: hsl(112, 44%, 82%);
 }
 .UserData li {
 	list-style: none;
-	border:3px solid green;
+	border: 3px solid green;
 	margin: 10px 10px 0px 0px;
-	padding:5px 10px;
-	width:auto;
+	padding: 5px 10px;
+	width: auto;
 	position: relative;
-transition:0.3s;
+	transition: 0.3s;
 }
 
 .UserData ul {
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .UserData li:hover {
-	background-color: rgba(20,200,10,0.2);
-	border-color: rgba(50,220,50,0.5)
+	background-color: rgba(20, 200, 10, 0.2);
+	border-color: rgba(50, 220, 50, 0.5);
 }
 
 .UserDataEdit {
-	top:5px;
-	right:5px;
+	top: 5px;
+	right: 5px;
 }
 
 .RemoveTagHandler {
 	position: absolute;
-	width:25px;
-	height:25px;
-	top:-15px;
-	left:-7px;
+	width: 25px;
+	height: 25px;
+	top: -15px;
+	left: -7px;
 	background: white;
 	border: 2px solid red;
 	border-radius: 50%;
@@ -60,26 +61,30 @@ transition:0.3s;
 	cursor: pointer;
 }
 
-.UserData .Selected{
-	background-color:  rgba(20,200,20, 0.3);
+.UserData .Selected {
+	background-color: rgba(20, 200, 20, 0.3);
 	transform: scale(1.1);
-	box-shadow: 2px 2px 3px rgba(0,0,0,0.3)
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
 }
-.UserData .Default{
-	background-color: rgba(0,0,0,0.2);
-	border:2px solid gray;
+.UserData .Default {
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid gray;
 	opacity: 0.5;
 }
 
-.pencil-green{color:hsl(92, 54%, 52%);
-cursor: pointer;}
-.pencil-red{color:hsl(2, 54%, 52%);
-font-size: 1.2em;
-cursor: pointer}
+.pencil-green {
+	color: hsl(92, 54%, 52%);
+	cursor: pointer;
+}
+.pencil-red {
+	color: hsl(2, 54%, 52%);
+	font-size: 1.2em;
+	cursor: pointer;
+}
 
-@media(max-width: 800px){
-	.UserData{
-		margin-bottom:30px;
-		margin-top:10px;
+@media (max-width: 800px) {
+	.UserData {
+		margin-bottom: 30px;
+		margin-top: 10px;
 	}
-} 
+}

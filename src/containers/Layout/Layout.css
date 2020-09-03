@@ -1,7 +1,9 @@
-.Main{
-	margin-top:100px;
+.Main {
+	margin-top: 100px;
 }
 
-@media(max-width: 800px){
-	.Main{padding: 5px !important}
+@media (max-width: 800px) {
+	.Main {
+		padding: 5px !important;
+	}
 }

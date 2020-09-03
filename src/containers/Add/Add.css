@@ -1,37 +1,36 @@
-.Add{
-	margin:150px auto;
+.Add {
+	margin: 150px auto;
 	transition: 1s;
 	width: 95%;
 }
 
 .Add.Result {
-	margin:80px auto;
+	margin: 80px auto;
 }
 
 .Add .URL {
-	width:250px;
+	width: 250px;
 	border-radius: 5px;
-	border:1px solid hsla(122, 54%, 82%, 1);
-	padding-left: 10px
+	border: 1px solid hsla(122, 54%, 82%, 1);
+	padding-left: 10px;
 }
 
-.Add .URL:focus{
-	outline:none;
-	background: hsla(122, 14%, 92%, 1)
+.Add .URL:focus {
+	outline: none;
+	background: hsla(122, 14%, 92%, 1);
 }
 
 .Add .Preview {
 	border-radius: 10px;
-	border:1px solid black;
-	padding:25px;
+	border: 1px solid black;
+	padding: 25px;
 	margin: 40px auto;
 	max-width: 1000px;
-	width:100%;
-
+	width: 100%;
 }
 
-@media(max-width: 800px){
-	.Add .URL{
-		width:200px;
+@media (max-width: 800px) {
+	.Add .URL {
+		width: 200px;
 	}
 }

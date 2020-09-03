@@ -1,42 +1,41 @@
-.NavItem{
-display:block;
-margin-left: 10px;
-box-sizing: border-box;
-width:150px;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;}
-
-.NavItem:hover{
-	border-bottom:1px solid hsla(112, 34%, 62%, 1);
-	background-color: hsla(112, 36%, 98%, 1)
+.NavItem {
+	display: block;
+	margin-left: 10px;
+	box-sizing: border-box;
+	width: 150px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.NavItem:hover a{
-	color:hsla(92, 14%, 22%, 1);
+
+.NavItem:hover {
+	border-bottom: 1px solid hsla(112, 34%, 62%, 1);
+	background-color: hsla(112, 36%, 98%, 1);
+}
+.NavItem:hover a {
+	color: hsla(92, 14%, 22%, 1);
 	text-decoration: none;
 }
 .NavItem a {
-	color:hsla(92, 14%, 22%, 1);
+	color: hsla(92, 14%, 22%, 1);
 	font-size: 30px;
-	width:100%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: "Cookie", cursive;
-
 }
 
-.ActiveNavItem{
-	
-	background-color: hsla(112, 30%, 98%, 1)
+.ActiveNavItem {
+	background-color: hsla(112, 30%, 98%, 1);
 }
 
-@media(max-width: 800px){
-	.NavItem{
-		width:180px;
+@media (max-width: 800px) {
+	.NavItem {
+		width: 180px;
 		margin-top: 20px;
-		height:80px;
+		height: 80px;
 	}
 }

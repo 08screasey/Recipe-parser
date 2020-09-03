@@ -1,79 +1,77 @@
-.btn.btnGreen{
+.btn.btnGreen {
 	color: white;
 	border-radius: 5px;
 	background-color: hsla(112, 34%, 42%, 1);
 	transition: 0.2s;
-	font-family: 'Lato'
+	font-family: "Lato";
 }
 
-.btn.btnGreen:hover{
+.btn.btnGreen:hover {
 	transform: scaleX(1.02);
-	color:white;
+	color: white;
 	background-color: hsla(112, 44%, 42%, 1);
-	box-shadow: 0px 0px 2px rgba(100,100,100,0.5)
+	box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.5);
 }
 
-.btn.btnGreen:hover:disabled{
-	transform: 	none;
-	background-color: 	hsla(122, 24%, 82%, 1);
+.btn.btnGreen:hover:disabled {
+	transform: none;
+	background-color: hsla(122, 24%, 82%, 1);
 	cursor: default;
 }
-.btn.btnGreen:disabled{
-	transform: 	none;
-	background-color: 	hsla(122, 24%, 82%, 1);
+.btn.btnGreen:disabled {
+	transform: none;
+	background-color: hsla(122, 24%, 82%, 1);
 	cursor: default;
 }
 
-.btn.btnDarkGreen{
+.btn.btnDarkGreen {
 	color: white;
 	border-radius: 5px;
 	background-color: hsla(112, 24%, 22%, 1);
 	transition: 0.2s;
-	font-family: 'Lato'
+	font-family: "Lato";
 }
 
-.btn.btnDarkGreen:hover{
+.btn.btnDarkGreen:hover {
 	transform: scaleX(1.02);
-	color:white;
+	color: white;
 	background-color: hsla(112, 24%, 32%, 1);
-	box-shadow: 0px 0px 2px rgba(100,100,100,0.5)
+	box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.5);
 }
 
-.btn.btnDarkGreen:hover:disabled{
-	transform: 	none;
-	background-color: 	hsla(122, 24%, 82%, 1);
+.btn.btnDarkGreen:hover:disabled {
+	transform: none;
+	background-color: hsla(122, 24%, 82%, 1);
 	cursor: default;
 }
-.btn.btnDarkGreen:disabled{
-	transform: 	none;
-	background-color: 	hsla(122, 24%, 82%, 1);
+.btn.btnDarkGreen:disabled {
+	transform: none;
+	background-color: hsla(122, 24%, 82%, 1);
 	cursor: default;
 }
 
-.btn.btnRed{
+.btn.btnRed {
 	color: white;
 	border-radius: 5px;
 	background-color: hsla(12, 24%, 52%, 1);
 	transition: 0.2s;
-	font-family: 'Lato'
+	font-family: "Lato";
 }
 
-.btn.btnRed:hover{
+.btn.btnRed:hover {
 	transform: scaleX(1.02);
-	color:white;
+	color: white;
 	background-color: hsla(12, 54%, 52%, 1);
-	box-shadow: 0px 0px 2px hsla(12, 44%, 52%)
+	box-shadow: 0px 0px 2px hsla(12, 44%, 52%);
 }
 
-.btn.btnRed:hover:disabled{
-	transform: 	none;
-	background-color: 	hsla(12, 24%, 82%, 1);
+.btn.btnRed:hover:disabled {
+	transform: none;
+	background-color: hsla(12, 24%, 82%, 1);
 	cursor: default;
 }
-.btn.btnRed:disabled{
-	transform: 	none;
-	background-color: 	hsla(12, 24%, 82%, 1);
+.btn.btnRed:disabled {
+	transform: none;
+	background-color: hsla(12, 24%, 82%, 1);
 	cursor: default;
 }
-
-

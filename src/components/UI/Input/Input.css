@@ -1,9 +1,10 @@
-.Input{
-	border:1px solid green;
+.Input {
+	border: 1px solid green;
 	border-radius: 5px;
-font-family: 'Lato', sans-serif}
+	font-family: "Lato", sans-serif;
+}
 
-.Input.Invalid{
+.Input.Invalid {
 	background-color: hsla(360, 80%, 95%, 1);
 }
 
@@ -14,10 +15,10 @@ small {
 }
 
 input:focus ~ small {
-	display:none;
+	display: none;
 }
 
-input.form-control:focus{
-box-shadow: 0px 0px 3px hsl(122, 60%, 80%);
-border:1px solid hsl(122, 60%, 80%);
+input.form-control:focus {
+	box-shadow: 0px 0px 3px hsl(122, 60%, 80%);
+	border: 1px solid hsl(122, 60%, 80%);
 }

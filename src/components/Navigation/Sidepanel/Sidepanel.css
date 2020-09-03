@@ -1,32 +1,32 @@
-.Sidepanel{
-	height:100%;
-	width:300px;
+.Sidepanel {
+	height: 100%;
+	width: 300px;
 	min-width: 130px;
 	position: fixed;
 	top: 0;
-	left:0;
+	left: 0;
 	transition: transform 0.2s;
 	background: white;
 	padding: 40px;
-	margin:0;
+	margin: 0;
 	z-index: 200;
 	font-family: "Cookie", cursive;
 }
 
-.Sidepanel-Closed{
+.Sidepanel-Closed {
 	transform: translateX(-100%);
 }
-.Sidepanel-Open{
+.Sidepanel-Open {
 	transform: translateX(0);
 }
 
-@media (min-width: 800px){
-	.Sidepanel{
-		display: none
+@media (min-width: 800px) {
+	.Sidepanel {
+		display: none;
 	}
 }
 
-.Sidepanel h1{
-font-size: 50px;
-text-align: center;
+.Sidepanel h1 {
+	font-size: 50px;
+	text-align: center;
 }

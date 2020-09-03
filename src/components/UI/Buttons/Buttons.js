@@ -1,29 +1,37 @@
-import React from 'react';
-import './Buttons.css';
+import React from "react";
+import "./Buttons.css";
 
 const button = (props) => {
+	let buttonClasses = ["btn"];
 
-	let buttonClasses = ["btn"]
-
-	switch(props.btnType){
+	switch (props.btnType) {
 		case "green":
-		buttonClasses = ["btn", "btnGreen"];
-		break;
+			buttonClasses = ["btn", "btnGreen"];
+			break;
 		case "dark-green-small":
-		buttonClasses = ["btn", "btnDarkGreen", "btn-sm"];
-		break;
+			buttonClasses = ["btn", "btnDarkGreen", "btn-sm"];
+			break;
 		case "red":
-		buttonClasses = ["btn", "btnRed"];
-		break;
+			buttonClasses = ["btn", "btnRed"];
+			break;
 		default:
-		return;
+			return;
 	}
 
-	if(props.block){
-		buttonClasses.push("btn-block")
+	if (props.block) {
+		buttonClasses.push("btn-block");
 	}
 
-	return <button disabled={props.disabled} onClick={props.clicked} type={props.btn} className={buttonClasses.join(" ")}>{props.children}</button>
-}
+	return (
+		<button
+			disabled={props.disabled}
+			onClick={props.clicked}
+			type={props.btn}
+			className={buttonClasses.join(" ")}
+		>
+			{props.children}
+		</button>
+	);
+};
 
 export default button;
