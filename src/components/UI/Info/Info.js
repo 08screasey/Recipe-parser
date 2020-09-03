@@ -177,7 +177,6 @@ class Info extends React.Component {
 							src={filtered}
 							className="w-75"
 							alt="screenshot of example filter"
-							className="w-75"
 						/>
 						<p>
 							For a more refined search, can click on the tags in
