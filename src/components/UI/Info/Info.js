@@ -8,6 +8,7 @@ import editRecipe from "../../../assets/editRecipe.png";
 import addNotes from "../../../assets/addNotes.png";
 import search from "../../../assets/search.png";
 import filtered from "../../../assets/filter.png";
+import info from "../../../assets/info.png";
 import "./Info.css";
 import buttons from "../../../assets/Screenshot (24).png";
 
@@ -15,7 +16,7 @@ class Info extends React.Component {
 	state = { page: 0 }
 	handlePageChange = (num) => {
 		this.setState((state) => {
-			return { page: (state.page + num) % 6 };
+			return { page: (state.page + num) % 7 };
 		});
 	}
 
@@ -90,8 +91,8 @@ class Info extends React.Component {
 							parser will return your recipe.
 						</p>
 						<p>
-							Once our API has created your recipe, you are free
-							to modify it before you save it to your account.
+							Once our parser has created your recipe, you are free
+							to modify it as much as you want before you save it to your account.
 						</p>
 					</Aux>
 				);
@@ -222,6 +223,14 @@ class Info extends React.Component {
 					</Aux>
 				);
 				break;
+				case 6:
+					content = (<Aux>
+						<h1>The Info Button</h1>
+						<p>If at any point you're lost, and need a refresher on how to use this parser, simply click the little blue 'i' next to the search bar on your account page.</p>
+						<img src={info} className="w-75" alt="screenshot of info button"/>
+						<p>We're always here to help!</p>
+					</Aux>)
+				break;
 			default:
 				break;
 		}
@@ -245,7 +254,7 @@ class Info extends React.Component {
 					</Button>
 					<Button
 						clicked={() => this.handlePageChange(+1)}
-						disabled={this.state.page === 5}
+						disabled={this.state.page === 6}
 						btnType="green"
 					>
 						Next
