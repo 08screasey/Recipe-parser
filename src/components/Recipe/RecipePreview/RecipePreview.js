@@ -86,7 +86,7 @@ const recipePreview = (props) => {
 				</Aux>
 			) : null}
 			<div className="d-flex justify-content-around">
-				<Button clicked={props.changeMode} btnType="green">
+				<Button clicked={props.changeMode} btnType="orange">
 					Edit Recipe
 				</Button>
 				{!props.authenticated ? (

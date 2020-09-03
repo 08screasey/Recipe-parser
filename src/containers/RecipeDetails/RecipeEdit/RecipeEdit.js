@@ -198,8 +198,8 @@ class RecipeEdit extends React.Component {
 					{this.props.recipe.notes ? (
 						<Aux>
 							<i
-								className="fas fa-times-circle position-absolute pencil-red"
-								style={{ right: "20px" }}
+								className="fas fa-times-circle position-absolute"
+								style={{ right: "20px", color:"hsla(15, 96%, 62%, 1)"}}
 								onClick={this.props.removeNotes}
 							></i>
 							<Input
@@ -223,7 +223,7 @@ class RecipeEdit extends React.Component {
 						</Button>
 					)}
 
-					<ul className="d-flex flex-wrap Tags">
+					<ul className="d-flex my-3 flex-wrap Tags">
 						{this.props.authenticated ? (
 							this.props.tags.map((tag, index) => {
 								return (
@@ -235,8 +235,8 @@ class RecipeEdit extends React.Component {
 											this.props.recipe.tags.indexOf(
 												tag
 											) > -1
-												? "SelectedTag"
-												: "DefaultTag"
+												? "Selected Tag"
+												: "Default Tag"
 										}
 										key={tag + index}
 									>

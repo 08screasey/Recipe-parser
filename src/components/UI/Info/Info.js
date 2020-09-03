@@ -216,7 +216,7 @@ class Info extends React.Component {
 							alt="screenshot of search page"
 						/>
 						<p>
-							Remember: If something wasn't quite how you liked
+							Tip: If something wasn't quite how you liked
 							it, you are free to edit the recipe until it's
 							perfect.
 						</p>
@@ -225,11 +225,12 @@ class Info extends React.Component {
 				break;
 				case 6:
 					content = (<Aux>
-						<h1>The Info Button</h1>
-						<p>If at any point you're lost, and need a refresher on how to use this parser, simply click the little blue 'i' next to the search bar on your account page.</p>
+						<h1 className="Green">The Info Button</h1>
+						<p>If at any point you're lost, and need a refresher on how to use this website, simply click the little blue '?' next to the search bar on your account page and this panel will appear once more.</p>
 						<img src={info} className="w-75" alt="screenshot of info button"/>
-						<p>We're always here to help!</p>
-					</Aux>)
+						<p className="text-center">We're always here if you need help.</p>
+						<p>Note: To exit this screen tap the small red <i className="fas fa-times-circle" style={{color:"hsla(15, 96%, 62%, 1)"}}></i> in the corner, happy cooking!</p>
+						</Aux>)
 				break;
 			default:
 				break;

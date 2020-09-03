@@ -19,7 +19,7 @@ class RecipeDetails extends React.Component {
 			instructions: [],
 			ingredients: [],
 			tags: [],
-			notes: null,
+			notes: [""],
 		},
 		loading: false,
 		servingsModifier: 0,
@@ -157,11 +157,11 @@ class RecipeDetails extends React.Component {
 	handleUnAuthenticated = () => {
 		this.props.history.push("/auth");
 	}
-	removeNotesHandler = () => {
+	/*removeNotesHandler = () => {
 		let updatedRecipe = { ...this.state.recipe };
 		updatedRecipe.notes = null;
 		this.setState({ recipe: updatedRecipe });
-	}
+	}*/
 	handleNotesChange = (event) => {
 		let updatedRecipe = { ...this.state.recipe };
 		if (!event || !event.target.value) {

@@ -20,25 +20,18 @@
 .btn.btn-addTag:hover {
 	background-color: hsl(112, 44%, 82%);
 }
-.UserData li {
+/*.Tag {
 	list-style: none;
-	border: 3px solid green;
 	margin: 10px 10px 0px 0px;
 	padding: 5px 10px;
 	width: auto;
 	position: relative;
 	transition: 0.3s;
-}
+	border-radius: 3px;
+	cursor: pointer;
+}*/
 
-.UserData ul {
-	display: flex;
-	flex-wrap: wrap;
-}
 
-.UserData li:hover {
-	background-color: rgba(20, 200, 10, 0.2);
-	border-color: rgba(50, 220, 50, 0.5);
-}
 
 .UserDataEdit {
 	top: 5px;
@@ -47,30 +40,14 @@
 
 .RemoveTagHandler {
 	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: -15px;
-	left: -7px;
-	background: white;
-	border: 2px solid red;
-	border-radius: 50%;
-	display: flex;
-	text-align: center;
-	justify-content: center;
-	align-items: center;
+	font-size: 15px;
+	top: -13px;
+	left: -8px;
+	color:crimson;
 	cursor: pointer;
 }
 
-.UserData .Selected {
-	background-color: rgba(20, 200, 20, 0.3);
-	transform: scale(1.1);
-	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
-}
-.UserData .Default {
-	background-color: rgba(0, 0, 0, 0.2);
-	border: 2px solid gray;
-	opacity: 0.5;
-}
+
 
 .pencil-green {
 	color: hsl(92, 54%, 52%);
@@ -88,3 +65,9 @@
 		margin-top: 10px;
 	}
 }
+
+.newTag i{
+	position:absolute;
+	right:10px;
+}
+.newTag{width:120px;}

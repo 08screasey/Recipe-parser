@@ -14,8 +14,11 @@ const button = (props) => {
 		case "red":
 			buttonClasses = ["btn", "btnRed"];
 			break;
+		case "orange":
+			buttonClasses = ["btn", "btnOrange"];
+			break;
 		default:
-			return;
+			break;
 	}
 
 	if (props.block) {

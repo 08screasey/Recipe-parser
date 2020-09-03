@@ -1,15 +1,26 @@
 .btn.btnGreen {
 	color: white;
-	border-radius: 5px;
-	background-color: hsla(112, 34%, 42%, 1);
+	border-radius: 3px;
+	background-color: hsla(112, 44%, 42%, 1);
 	transition: 0.2s;
-	font-family: "Lato";
+	font-family: "Cookie";
 }
+.btn:hover{
+box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+
+}
+.btn{
+	border-radius: 3px;
+	font-size: 25px !important;
+	transition: 0.2s;
+	font-family: "Cookie";
+	font-weight: 500 !important;
+	padding:0 10px !important;
+text-shadow: 1px 1px grey !important}
 
 .btn.btnGreen:hover {
-	transform: scaleX(1.02);
 	color: white;
-	background-color: hsla(112, 44%, 42%, 1);
+	background-color: #66AE5C;
 	box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.5);
 }
 
@@ -26,14 +37,14 @@
 
 .btn.btnDarkGreen {
 	color: white;
-	border-radius: 5px;
+	border-radius: 3px;
 	background-color: hsla(112, 24%, 22%, 1);
 	transition: 0.2s;
-	font-family: "Lato";
+	font-size:20px !important;
+	font-family: "Cookie";
 }
 
 .btn.btnDarkGreen:hover {
-	transform: scaleX(1.02);
 	color: white;
 	background-color: hsla(112, 24%, 32%, 1);
 	box-shadow: 0px 0px 2px rgba(100, 100, 100, 0.5);
@@ -53,25 +64,32 @@
 .btn.btnRed {
 	color: white;
 	border-radius: 5px;
-	background-color: hsla(12, 24%, 52%, 1);
+	background-color: hsla(15, 96%, 42%, 1);
 	transition: 0.2s;
-	font-family: "Lato";
+	font-family: "Cookie";
 }
 
 .btn.btnRed:hover {
-	transform: scaleX(1.02);
 	color: white;
-	background-color: hsla(12, 54%, 52%, 1);
-	box-shadow: 0px 0px 2px hsla(12, 44%, 52%);
+	background-color: hsla(15, 96%, 52%, 1);
 }
 
 .btn.btnRed:hover:disabled {
 	transform: none;
-	background-color: hsla(12, 24%, 82%, 1);
+	background-color: hsla(15, 76%, 92%, 1);
 	cursor: default;
 }
 .btn.btnRed:disabled {
 	transform: none;
-	background-color: hsla(12, 24%, 82%, 1);
+	background-color:hsla(15, 76%, 92%, 1);
 	cursor: default;
+}
+
+.btn.btnOrange{
+	background-color: hsl(46.1,98.5%,50.1%); 
+	color:white;
+}
+.btn.btnOrange:hover{
+	background-color: hsl(46.1,98.5%,70.1%); 
+	color:white;
 }

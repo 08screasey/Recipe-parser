@@ -78,14 +78,14 @@ class UserAccountInfo extends React.Component {
 					{" "}
 					<span className="Green">Username:</span> {this.state.name}
 				</p>
-				<ul>
+				<ul className="Tags">
 					{this.state.recipeTags.map((tag) => {
 						return (
 							<li
 								className={
 									this.props.tagClasses.indexOf(tag) !== -1
-										? "Selected"
-										: "Default"
+										? "Selected Tag"
+										: "Default Tag"
 								}
 								onClick={() => this.props.tagFilter(tag)}
 								key={tag}
@@ -117,67 +117,50 @@ class UserAccountInfo extends React.Component {
 							}
 						/>
 						<div className="row">
-							<div className="col-md-7">
-								<ul>
+							<div className="col-md-12">
+								<ul className="Tags Remove" style={{padding:"20px"}}>
 									{this.state.recipeTags.map((tag, index) => {
 										return (
-											<li key={tag + index}>
-												<span
-													className="RemoveTagHandler"
-													onClick={() =>
+											<li key={tag + index} className="Tag">
+												
+													
+												
+												<span onClick={() =>
 														this.removeTagHandler(
 															index
 														)
-													}
-												>
-													X
-												</span>{" "}
+													} className="RemoveTagHandler">
+					<i className="fas fa-times-circle"></i>
+				</span>
+												{" "}
 												{tag}
 											</li>
 										);
 									})}
-								</ul>
-							</div>
-							<div className="col-md-4 d-flex align-items-center justify-content-center">
-								<div className="row justify-content-center mt-2 align-items-center">
-									<div className="col d-flex justify-content-center align-items-center align-self-center">
-										{this.state.addTag ? (
-											<Aux>
-												<Input
+									<li className="Tag">
+									<div className="d-flex align-items-center h-100 newTag ">
+										<input
 													value={this.state.newTag}
-													inputConfig={{
-														type: "text",
-														required: true,
-													}}
-													changed={(event) =>
+													
+														type="text"
+														placeholder="New Tag"
+											
+													onChange={(event) =>
 														this.handleInputChange(
 															event,
 															"newTag"
 														)
 													}
 												/>
-												<button
-													onClick={this.handleAddTag}
-													className="btn btn-addTag ml-2 mt-2"
-												>
-													+
-												</button>
-											</Aux>
-										) : (
-											<Button
-												clicked={this.handleTagToggler}
-												btnType="dark-green-small"
-											>
-												New Tag
-											</Button>
-										)}
+												<i class="fas ml-1 fa-plus-circle" style={{fontSize:"22px", cursor:"pointer", color:"hsla(112, 44%, 42%, 1)"}} onClick={()=>this.handleAddTag()}></i>
 									</div>
-								</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 
 						<div className="d-flex mt-2 justify-content-center">
-							<Button btnType="green">Save</Button>
+							<Button btnType="green">Save Changes</Button>
 						</div>
 					</form>
 				</div>
