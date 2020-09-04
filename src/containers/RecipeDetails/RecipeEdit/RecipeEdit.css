@@ -98,13 +98,11 @@
   top: 0;
 }
 
-.Tag:hover,
 .Tag.Selected {
   background-color: crimson;
   color: white;
 }
 
-.Tag:hover::after,
 .Tag.Selected::after {
    border-left-color: crimson; 
 }
