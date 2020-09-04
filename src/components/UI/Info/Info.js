@@ -29,14 +29,7 @@ class Info extends React.Component {
 					<Aux>
 						<h1 className="Green">Welcome To the Recipe Parser!</h1>
 						<p>
-							Have you grown tired of sifting through blogs
-							looking for a recipe, only to have your phone freeze
-							from the overwhelming adds and unneccessary
-							animations?
-						</p>
-						<p>
-							We've created a safe space for your beloved recipes
-							to be safely stored away!
+							We created this app so that you can store recipes you find on websites without swimming through miles of text to find it.
 						</p>
 						<img
 							src={homepage}

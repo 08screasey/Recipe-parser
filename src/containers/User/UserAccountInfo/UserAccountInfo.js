@@ -4,7 +4,6 @@ import "./UserAccountInfo.css";
 import Input from "../../../components/UI/Input/Input";
 import Button from "../../../components/UI/Buttons/Buttons";
 import * as actions from "../../../store/actions/index";
-import Aux from "../../../hoc/Auxilliary";
 
 class UserAccountInfo extends React.Component {
 	state = {
