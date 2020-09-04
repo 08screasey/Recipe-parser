@@ -63,7 +63,7 @@ class Info extends React.Component {
 						</p>
 						<p>
 							Tap on the icon in the top right corner and head
-							over the the{" "}
+							over to the{" "}
 							<span
 								style={{
 									fontSize: "30px",
