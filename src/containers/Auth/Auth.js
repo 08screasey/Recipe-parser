@@ -6,6 +6,8 @@ import * as actions from "../../store/actions/index";
 import { Redirect } from "react-router-dom";
 import ErrorAlert from "../../components/UI/Error/Error";
 import Loader from "../../components/UI/Loader/Loader";
+import Info from '../../components/UI/Info/Info';
+import Modal from "../../components/UI/Modal/Modal"
 import "./Auth.css";
 
 class Auth extends Component {
@@ -30,6 +32,7 @@ class Auth extends Component {
 		},
 		formValid: false,
 		isSignUp: false,
+		info:false
 	}
 
 	checkValidity(value, rules) {
@@ -45,6 +48,12 @@ class Auth extends Component {
 			valid = re.test(value);
 		}
 		return valid;
+	}
+
+	handleInfoToggle = () => {
+		this.setState(prevState=>{
+			return {info:!prevState.info}
+		})
 	}
 
 	handleInputChange(event, identifier) {
@@ -90,8 +99,16 @@ class Auth extends Component {
 			redirection = <Redirect to="/user" />;
 		}
 
-		return (
+		return (<div className="w-100 h-100">
+			<Modal closeModal={this.handleInfoToggle} showModal={this.state.info}>
+											{this.state.info ? <Info login/> : null}
+										</Modal>
 			<div className="Auth">
+				<div className="position-absolute" style={{right:"10px", top:"10px"}}><i
+										className="fas fa-question-circle toggler"
+										style={{color:"hsl(184.8,64.1%,60%)", fontSize:"25px"}}
+										onClick={this.handleInfoToggle}></i>
+										</div>
 				{redirection}
 				{this.props.error ? (
 					<ErrorAlert error={this.props.error} />
@@ -161,6 +178,7 @@ class Auth extends Component {
 						</small>
 					</form>
 				)}
+			</div>
 			</div>
 		);
 	}

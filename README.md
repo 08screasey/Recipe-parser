@@ -1,3 +1,48 @@
+
+
+
+# Recipe Analyser: Dynamic React Project
+
+A dynamic web application built using the React framework, utilising firebase as an authentication and database platform.
+
+## Preview
+
+[View the Recipe Analyser here](https://react-recipe-project-87fc0.web.app/auth)
+
+## Motivation
+
+The idea for this web application stemmed from conversations with cafe owners and food enthusiasts who were eager to expand their cooking repertoire and lost motivation after being bombarded with page-freezing advertisements and over saturated page content. This gave me the opportunity to enhance my experience of working with API's, whilst creating something to relieve frustration and reignite a passion for cooking.
+
+## Design
+
+The target audience for this recipe analyser is one of young cooking enthusiasts. With an increased focus on health and plant-based living in younger audiences the built-in search function for this app will look for any plant-based recipes matching the queried term. The color base for this website is a natural green to emphasise the applications focus on plant-based cuisine (It is still possible to add your own/modify recipes to include meat and dairy). Furthermore, the "Cookie" font was chosen for headings and key areas with the intention of creating a personalised recipe book feel to this app.
+
+## Features
+
+As with any recipe book, this one is designed to end up covered in notes and modifications. Any user who registers with this web app can use it's entire feature-set, including:
+* Parsing a recipe from any blog page using the "Add new recipe" function
+* Search in the internal database for plant-based recipe inspirations
+* Edit all components of any recipe
+* Add or remove notes and tags from any recipe
+* Adjust serving size to required number
+* Search personal saved recipes for a matching query parameter and/or matching tags
+* Add/remove tags used for filtering from user data
+* Modify username associated with account
+
+## API's
+
+**Spoonacular**: The foundation of this website. The Database is used for the interior search functionality and the "extract recipe details" endpoint is called when a single recipe is clicked, providing the full recipe. The "custom recipe" endpoint is called when a url is pasted in to the text input on the "/Add" route.
+
+## Coming In Future Updates
+
+* Functionality to add own recipe from scratch
+* Creating a new sharable route with "/:recipeId/share" to clone a friend's saved recipe
+* Increased accessability support
+* Removing non-DRY code
+* Refactoring CSS for an easy-to-read layout
+* More differentiation between Login and SignUp screens
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +111,4 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+

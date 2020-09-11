@@ -9,6 +9,7 @@ import addNotes from "../../../assets/addNotes.png";
 import search from "../../../assets/search.png";
 import filtered from "../../../assets/filter.png";
 import info from "../../../assets/info.png";
+import icon from "../../../assets/menu_toggle.png";
 import "./Info.css";
 import buttons from "../../../assets/Screenshot (24).png";
 
@@ -27,7 +28,7 @@ class Info extends React.Component {
 			case 0:
 				content = (
 					<Aux>
-						<h1 className="Green">Welcome To the Recipe Parser!</h1>
+						<h1 className="Green">Welcome To the Recipe Analyser!</h1>
 						<p>
 							We created this app so that you can store recipes you find on websites without swimming through miles of text to find it.
 						</p>
@@ -37,7 +38,7 @@ class Info extends React.Component {
 							alt="Example of home page"
 						/>
 						<p>
-							This page is your home page, where you can see all
+							{this.props.login ? "Once you're registered and logged in you'll see " : "This page is "}your home page, where you can see all
 							the recipe's you've saved to your account
 						</p>
 						<p>
@@ -62,7 +63,7 @@ class Info extends React.Component {
 							saved is the URL.
 						</p>
 						<p>
-							Tap on the icon in the top right corner and head
+							If you're on mobile tap the <img src={icon} alt="menu toggler example" className="d-inline-block my-0" style={{width:"40px", paddingBottom:"10px"}}/> icon to bring up the main menu. Next, head
 							over to the{" "}
 							<span
 								style={{
